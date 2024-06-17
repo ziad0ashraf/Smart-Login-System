@@ -11,7 +11,7 @@ let newAccounts=[]
 if(localStorage.getItem('newAccounts')){
     newAccounts=JSON.parse(localStorage.getItem('newAccounts'))
 };
-signUpBtn?.addEventListener('click',function singUpAccount(){
+signUpBtn.addEventListener('click',function singUpAccount(){
     if(validationSignUpName()&&validationSignUpEmail()&&validationSignupPassword()){
                 let newAccount={
                 newName:signupNameInput.value,
@@ -24,7 +24,7 @@ signUpBtn?.addEventListener('click',function singUpAccount(){
             }else{
                 newAccounts.push(newAccount)
                 localStorage.setItem('newAccounts',JSON.stringify(newAccounts))
-                localStorage.setItem('account',JSON.stringify(account))
+                existEmail.classList.add('d-none')
                 successful.classList.remove('d-none')
                 validSignUp.classList.add('d-none')
                 window.location="index.html"
@@ -39,9 +39,11 @@ signUpBtn?.addEventListener('click',function singUpAccount(){
 
 function exist(){
     for (let i = 0; i < newAccounts.length; i++) {
-        if(newAccounts[i].newEmail==signupEmailInput.value  ){
+        if(signupEmailInput.value==newAccounts[i].newEmail){
             existEmail.classList.add('d-none')
             return true
+        }else{
+            return false
         }
         
     }
