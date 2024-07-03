@@ -11,17 +11,17 @@ signInBtn?.addEventListener('click',function signInAccount(){
     if(validationSignInPassword()&&validationSignInEmail()){
         for (let i = 0; i < newAccounts.length; i++) {
             if(signInEmailInput.value==newAccounts[i].newEmail&&signInPasswordInput.value==newAccounts[i].newPassword){
+                signUpFirst.classList.add('d-none')  
                 localStorage.setItem('userName',newAccounts[i].newName)
                 window.location="home.html"
             }else{
                 signUpFirst.classList.remove('d-none')
-            }
-            
-            }
+                validSignIn.classList.add('d-none')
+                }
+        } 
       }else{
         validSignIn.classList.remove('d-none')
         signUpFirst.classList.add('d-none')
-        validSignIn.classList.add('d-none')
       }
 });
 

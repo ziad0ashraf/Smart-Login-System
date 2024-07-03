@@ -2,66 +2,39 @@ body{
     background-image: url(../imgs/blue-smooth-textured-paper-background.jpg);
     background-size: cover;
     background-position: center center;
+    
 }
 
 #signUp .container{
     width: 50%;
-    background: linear-gradient(10deg, rgba(0,0,0,1) 0%, rgba(42,98,128,1) 58%);
+    background: linear-gradient(0deg, rgba(0,0,0,1) 15%, rgba(42,98,128,1) 58%);
+    box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.5);
 }
 
 #signIn .container{
     width: 50%;
-    background: linear-gradient(10deg, rgba(0,0,0,1) 0%, rgba(42,98,128,1) 58%);
-}
+    background: linear-gradient(10deg, rgba(0,0,0,1) 20%, rgba(42,98,128,1) 58%);
+    box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.5);
 
+}
 #Welcome .container{
-    padding: 5%;
-    width: 40%;
-    border:solid 5px white;    
-    h1{
-        line-height: 45px;
+    padding: 50px;
+    width: 50%;
+    border:solid 2px white; 
+    background-color: rgba(0,0,0,0.7);   
+}
+@media screen and (max-width: 1020px) {
+    #Welcome .container {
+        width: 100%;
+    }
+    #signUp .container{
+        width: 100%;
+    }
+    #signIn .container{
+        width: 100%;
     }
 }
-
-
-
-
 .btn-info {
     --bs-btn-color: #31d2f2 !important;
     --bs-btn-bg: linear-gradient(10deg, rgba(0,0,0,1) 0%, rgba(42,98,128,1) 58%) !important;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.video-background {
-    position: fixed;
-    overflow: hidden;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1; 
-}
-
-#bg-video {
-    overflow: hidden;
-    position: absolute;
-    top: 0;
-    left: 0;
-    min-width: 100%;
-    min-height: 100%;
-    background-size: cover;
-    z-index: -1;
 }

@@ -85,26 +85,8 @@ function validationSignUpEmail(){
         }
     }
 
-// function validation(valid){
-//         let validate={
-//             signupName:/^[a-zA-ZÀ-ÖØ-öø-ÿ'.\s-]{4,100}$/,
-//             signupEmail:/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/, 
-//             signupPassword:/^([A-Za-z])[A-Za-z\d]{4,}$/,
-//             signInEmail:/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/,
-//             signInPassword:/^([A-Za-z])[A-Za-z\d]{4,}$/
-//             }
-//         if(validate[valid.id].test(valid.value)){
-//             valid.classList.replace('is-invalid', 'is-valid')
-//             flag=true;
-//             return true
-//         }else{
-//             valid.classList.add('is-invalid')
-//             valid.classList.remove('is-valid')
-//             flag=false;
-//             return false
-//         }
-//         }
 
+    
     
 
 
